@@ -1,0 +1,91 @@
+:root {
+    /* Light theme colors */
+    --background-color: rgb(213, 214, 211);
+    --text-color: #2E2E2E;
+    --accent-color: #067622;
+    --secondary-color: #DFF0DF;
+}
+
+
+.my-name {
+	font-weight: bold;
+	font-size: 3rem;
+	color:var(--accent-color); 
+}
+.large-line {
+	margin-top: 0;
+}
+.current-title {
+	font-size: 1.5rem;
+	color: var(--accent-color);
+}
+.portrait {
+	border-radius: 30px;
+}
+.portrait-text-parent {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.portrait-text-content {
+	color: var(--text-color);
+}
+.content-header {
+	font-size: 1.25rem;
+	font-weight: bold;
+	padding-top: 1rem;
+	color: var(--text-color);
+}
+.collapse-icon {
+	color: var(--accent-color);
+	font-size: 1rem;
+	text-decoration: none;
+}
+.experience-block {
+	height: 15rem;
+	background-color: var(--background-color);
+	border-radius: 5px;
+	display: flex;
+	align-content: flex-start;
+	margin-top: 1rem;
+}
+.experience-img-block {
+	align-self: center;
+	margin-left: 1rem;
+	width: 10rem;
+	height: 10rem;
+	display: flex;
+  	flex-flow: row nowrap;
+  	align-items: center;
+  	justify-content: center;
+  	flex-shrink: 0;
+}
+.experience-img-block > img {
+	max-height: 90%;
+	max-width: 90%;
+}
+.experience-text-block {
+	margin-left: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding-top: 1rem;
+	flex-grow: 1;
+	padding-right: 1rem;
+
+}
+.experience-institution {
+	font-size: 1.5rem;
+}
+.experience-body {
+	padding-top: 0.25rem;
+}
+.experience-body > ul > li {
+	padding-bottom: 0.5rem;
+}
+body.dark-mode {
+    --background-color: #2E2E2E;
+    --text-color: #F5F5F5;
+    --accent-color: #4be683;
+    --secondary-color: #7a7979;
+}

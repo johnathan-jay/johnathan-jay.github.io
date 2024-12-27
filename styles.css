@@ -1,0 +1,96 @@
+.container {
+	margin-left: auto;
+	margin-right: auto;
+	width: 60rem;
+	background-color: var(--secondary-color);
+	padding: 2rem;
+	border-radius: 5px;
+	margin-top: 1rem;
+	margin-bottom: 2.5rem;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--background-color);
+}
+.banner-name {
+	font-weight: bold;
+	font-size: 1.5rem;
+	padding-right: 2rem;
+}
+
+label{
+	width:50px;
+	height:20px;
+	position:relative;
+	display: block;
+	background: var(--background-color);
+	border-radius: 20px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+label:after{
+	content: "";
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	top:1px;
+	left: 1px;
+	background: var(--accent-color);
+	border-radius: 18px;
+	transition: 0.3s;
+}
+input{
+	visibility: hidden;
+	height: 0;
+	width: 0;
+}
+input :checked+label {
+	background: black;
+}
+input:checked+label:after {
+	left:49px;
+	transform:translateX(-100%);
+	background: gray;
+}
+label:active::after{
+	width: 26px;
+}
+
+input:checked + label + background
+
+:root {
+    /* Light theme colors */
+    --background-color: rgb(213, 214, 211);
+    --text-color: #2E2E2E;
+    --accent-color: #067622;
+    --secondary-color: #d0d1d0;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button {
+    background-color: var(--accent-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #054D19;
+}
+
+/* Dark theme */
+body.dark-mode {
+    --background-color: #2E2E2E;
+    --text-color: #F5F5F5;
+    --accent-color: #4be683;
+    --secondary-color: #7a7979;
+}
